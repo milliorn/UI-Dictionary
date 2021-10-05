@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+[![Lint Code Base](https://github.com/milliorn/React-Material-UI-Dictionary/actions/workflows/super-linter.yml/badge.svg)](https://github.com/milliorn/React-Material-UI-Dictionary/actions/workflows/super-linter.yml)
+
 ## Resources
 
 🔗 PNG to Favicon Convertor: <https://favicon.io/favicon-converter/>
