@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
-    const [word, setWord] = useState("")
+    const [word, setWord] = useState("");
     const [meanings, setMeanings] = useState([]);
 
     const dictionaryApi = async () => {
@@ -14,7 +14,6 @@ function App() {
             );
 
             setMeanings(data.data);
-
         } catch (error) {
             console.log(error);
         }
@@ -29,10 +28,15 @@ function App() {
     return (
         <div
             className="App"
-            style={{ height: '100vh', backgroundColor: '#282c34', color:"white" }}
+            style={{ height: "100vh", backgroundColor: "#282c34", color: "white" }}
         >
-        <Container maxWidth="md">Dictionary</Container>
-    </div>
+            <Container
+                maxWidth="md"
+                style={{ display: "flex", flexDirection: "column", height: "100vh" }}
+            >
+                Dictionary
+            </Container>
+        </div>
     );
 }
 
