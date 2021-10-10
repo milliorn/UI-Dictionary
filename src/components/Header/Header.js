@@ -1,13 +1,18 @@
-import { createTheme, MenuItem, TextField } from "@material-ui/core";
-import { ThemeProvider } from "@material-ui/styles";
-import React from 'react';
-import './Header.css';
+import {
+    createTheme,
+    MenuItem,
+    TextField,
+    ThemeProvider,
+} from "@material-ui/core";
+import React from "react";
+import "./Header.css";
+import categories from "../../data/category";
 
-export const Header = () => {
+const Header = ({ setCategory, category, word, setWord }) => {
     const darkTheme = createTheme({
         palette: {
             primary: {
-                main:'#fff',
+                main: "#fff",
             },
             type: "dark",
         },
@@ -15,20 +20,32 @@ export const Header = () => {
 
     return (
         <div className="header">
-            <span className="title">Word Lexicon</span>
+            <span className="title">{word ? word : "Word Lexicon" }</span>
             <div className="inputs">
                 <ThemeProvider theme={darkTheme}>
-                    <TextField id="standard-basic" label="Standard" />
                     <TextField
-                        id="standard-select-currency"
+                        className="search"
+                        label="Search a Word"
+                        value={word}
+                        onChange={(e) => setWord(e.target.value)}
+                    />
+                    <TextField
+                        className="select"
                         select
-                        label="Select"
-                        helperText="Please select your currency"
+                        label="Language"
+                        value={category}
+                        onChange={(e) => setCategory(e.target.value)}
                     >
-                        <MenuItem>english</MenuItem>
+                        {categories.map((option) => (
+                            <MenuItem key={option.label} value={option.label}>
+                                {option.value}
+                            </MenuItem>
+                        ))}
                     </TextField>
                 </ThemeProvider>
             </div>
         </div>
-    );
-}
+        );
+};
+
+export default Header;
