@@ -12,6 +12,8 @@
 
 🔗 Manifest.json Generator: <https://app-manifest.firebaseapp.com/>
 
+React Icons: <https://react-icons.github.io/react-icons>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
