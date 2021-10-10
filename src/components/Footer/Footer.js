@@ -1,30 +1,30 @@
-import React from "react";
-import "./Footer.css";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import React from 'react'
+import './Footer.css'
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 const Footer = () => {
-	return (
-		<div className="footer">
-			<hr style={{ width: "90%", marginTop: 20 }} />
-			<span className="name">
-				{" "}
-				<a href="https://dictionaryapi.dev" target="__blank">
-					Free Dictionary API
-				</a>
-			</span>
-			<div className="iconContainer">
-				<a href="https://github.com/milliorn" target="__blank">
-					<FaGithub />
-				</a>
-				<a href="https://www.linkedin.com/in/scott-milliorn" target="__blank">
-					<FaLinkedin />
-				</a>
-				<a href="https://twitter.com/scottmilliorn" target="__blank">
-					<FaTwitter />
-				</a>
-			</div>
-		</div>
-		);
-};
+  return (
+    <div className='footer'>
+      <hr style={{ width: '90%', marginTop: 20 }} />
+      <span className='name'>
+        {' '}
+        <a href='https://dictionaryapi.dev' target='__blank'>
+          Free Dictionary API
+        </a>
+      </span>
+      <div className='iconContainer'>
+        <a href='https://github.com/milliorn' target='__blank'>
+          <FaGithub />
+        </a>
+        <a href='https://www.linkedin.com/in/scott-milliorn' target='__blank'>
+          <FaLinkedin />
+        </a>
+        <a href='https://twitter.com/scottmilliorn' target='__blank'>
+          <FaTwitter />
+        </a>
+      </div>
+    </div>
+    )
+}
 
-export default Footer;
+export default Footer
