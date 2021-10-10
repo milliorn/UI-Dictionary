@@ -46,9 +46,9 @@ function App() {
             className="App"
             style={{
                 height: "100vh",
-                backgroundColor:LightMode?"#fff":"#282c34",
+                backgroundColor: LightMode ? "#fff" : "#282c34",
                 color: LightMode ? "black" : "white",
-                transition: "all 0.8s linear"
+                transition: "all 0.8s linear",
             }}
         >
             <Container
@@ -62,11 +62,11 @@ function App() {
             >
                 <div
                     style={{ position: "absolute", top: 0, right: 15, paddingTop: 10 }}
-                        >
-                            <span>{LightMode?"Light":"Dark"}</span>
-                            <DarkMode
-                                checked={LightMode}
-                                onChange={() => setLightMode(!LightMode)}
+                >
+                    <span>{LightMode ? "Light" : "Dark"} Mode</span>
+                    <DarkMode
+                        checked={LightMode}
+                        onChange={() => setLightMode(!LightMode)}
                     />
                 </div>
                 <Header
@@ -78,7 +78,12 @@ function App() {
                     LightMode={LightMode}
                 />
                 {meanings && (
-                    <Definitions word={word} meanings={meanings} category={category} />
+                    <Definitions
+                        meanings={meanings}
+                        word={word}
+                        LightMode={LightMode}
+                        category={category}
+                    />
                 )}
             </Container>
         </div>
