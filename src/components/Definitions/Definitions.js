@@ -13,9 +13,7 @@ const Definitions = ({ word, category, meanings, LightMode }) => {
           Your Browser doesn't support audio element.
         </audio>
       )}
-      {word === '' ? (
-        <span className='subTitle'>Start by typing a word in search</span>
-      ) : (
+      {word === '' ? (<span className='subTitle'>Start by typing a word in search</span>) : (
         meanings.map((meaning) =>
           meaning.meanings.map((item) =>
             item.definitions.map((def) => (
