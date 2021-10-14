@@ -13,36 +13,40 @@ const Definitions = ({ word, category, meanings, LightMode }) => {
           Your Browser doesn't support audio element.
         </audio>
       )}
-      {word === '' ? (<span className='subTitle'>Start by typing a word in search</span>) : (
-        meanings.map((meaning) =>
-          meaning.meanings.map((item) =>
-            item.definitions.map((def) => (
-              <div
-                className='singleMean'
-                style={{
-                  backgroundColor: LightMode ? '#3b5360' : 'white',
-                  color: LightMode ? 'white' : 'black',
-                }}
-              >
-                <b>{def.definitions}</b>
-                <hr style={{ backgroundColor: 'black', width: '100%' }} />
-                {def.example && (
-                  <span>
-                    <b>Example: </b>
-                    {def.example}
-                  </span>
-                )}
-                {def.synonyms && (
-                  <span>
-                    <b>Synonyms: </b>
-                    {def.synonyms.map((s) => `${s}, `)}
-                  </span>
-                )}
-              </div>
-            ))
+      {word === ''
+        ?
+        (<span className='subTitle'>Start by typing a word in search</span>)
+        :
+        (
+          meanings.map((meaning) =>
+            meaning.meanings.map((item) =>
+              item.definitions.map((def) => (
+                <div
+                  className='singleMean'
+                  style={{
+                    backgroundColor: LightMode ? '#3b5360' : 'white',
+                    color: LightMode ? 'white' : 'black',
+                  }}
+                >
+                  <b>{def.definitions}</b>
+                  <hr style={{ backgroundColor: 'black', width: '100%' }} />
+                  {def.example && (
+                    <span>
+                      <b>Example: </b>
+                      {def.example}
+                    </span>
+                  )}
+                  {def.synonyms && (
+                    <span>
+                      <b>Synonyms: </b>
+                      {def.synonyms.map((s) => `${s}, `)}
+                    </span>
+                  )}
+                </div>
+              ))
+            )
           )
-        )
-      )}
+        )}
     </div>
   )
 }
