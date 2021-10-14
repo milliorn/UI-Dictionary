@@ -16,13 +16,13 @@ const Definitions = ({ word, category, meanings, LightMode }) => {
       {word === ''
         ? (<span className='subTitle'>Start by typing a word in search</span>)
         : (meanings.map((meaning) =>
-          meaning.meanings.map((item) =>
-            item.definitions.map((def) => (
-              <div
+        meaning.meanings.map((item) =>
+          item.definitions.map((def) => (
+            <div
                 className='singleMean'
                 style={{
                   backgroundColor: LightMode ? '#3b5360' : 'white',
-                  color: LightMode ? 'white' : 'black',
+                  color: LightMode ? 'white' : 'black'
                 }}
               >
                 <b>{def.definitions}</b>
@@ -40,12 +40,12 @@ const Definitions = ({ word, category, meanings, LightMode }) => {
                   </span>
                 )}
               </div>
-            ))
-          )
+          ))
         )
+      )
         )}
     </div>
   )
 }
-  
+
 export default Definitions
