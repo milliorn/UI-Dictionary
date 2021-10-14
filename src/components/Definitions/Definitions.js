@@ -13,10 +13,8 @@ const Definitions = ({ word, category, meanings, LightMode }) => {
           Your Browser doesn't support audio element.
         </audio>
       )}
-      {word === ''
-        ?
-        (<span className='subTitle'>Start by typing a word in search</span>)
-        :
+      {word === '' ?
+        (<span className='subTitle'>Start by typing a word in search</span>) :
         (
           meanings.map((meaning) =>
             meaning.meanings.map((item) =>
@@ -25,7 +23,7 @@ const Definitions = ({ word, category, meanings, LightMode }) => {
                   className='singleMean'
                   style={{
                     backgroundColor: LightMode ? '#3b5360' : 'white',
-                    color: LightMode ? 'white' : 'black',
+                    color: LightMode ? 'white' : 'black'
                   }}
                 >
                   <b>{def.definitions}</b>
