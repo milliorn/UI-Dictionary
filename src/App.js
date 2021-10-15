@@ -11,12 +11,19 @@ const App = () => {
   const [word, setWord] = useState('')
   const [meanings, setMeanings] = useState([])
   const [category, setCategory] = useState('en')
-    const [LightMode, setLightMode] = useState(false)
+  const [LightMode, setLightMode] = useState(false)
+
   const dictionaryApi = async () => {
     try {
       const data = await axios.get(
-        `https://api.dictionaryapi.dev/api/v2/entries/${category}/${word}`
-      )
+        `https://api.dictionaryapi.dev/api/v2/entries/${category}/${word}`,
+        {
+          headers: {
+            authorization: ' xxxxxxxxxx',
+            'Content-Type': 'application/json'
+          }
+        }
+      ).then((response) => console.log(response))
       setMeanings(data.data)
     } catch (error) {
       console.log(error)
@@ -40,7 +47,7 @@ const App = () => {
     },
     checked: {},
     track: {},
-    })(Switch)
+  })(Switch)
 
   return (
     <div
