@@ -16,14 +16,9 @@ const App = () => {
   const dictionaryApi = async () => {
     try {
       const data = await axios.get(
-        `https://api.dictionaryapi.dev/api/v2/entries/${category}/${word}`,
-        {
-          headers: {
-            authorization: ' xxxxxxxxxx',
-            'Content-Type': 'application/json'
-          }
-        }
-      ).then((response) => console.log(response))
+        `https://api.dictionaryapi.dev/api/v2/entries/${category}/${word}`
+      )
+
       setMeanings(data.data)
     } catch (error) {
       console.log(error)
