@@ -31,14 +31,14 @@ const Header = ({ setCategory, category, word, setWord, LightMode }) => {
           <TextField
             type='text'
             className='search'
-            aria-label='Search a Word'
+            label='Search a Word'
             aria-required='true'
             value={word}
             onChange={(e) => setWord(e.target.value)}
           />
           <TextField
             select
-            aria-label='Language'
+            label='Language'
             aria-required='true'
             value={category}
             onChange={(e) => handleChange(e)}
