@@ -1,47 +1,47 @@
-import React from 'react'
-import './Footer.css'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import React from "react";
+import "./Footer.css";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='footer'>
-      <hr style={{ width: '90%', marginTop: 20 }} />
-      <span className='name'>
+    <div className="footer">
+      <hr style={{ width: "90%", marginTop: 20 }} />
+      <span className="name">
         <a
-          href='https://github.com/milliorn/React-Material-UI-Dictionary'
-          target='__blank'
+          href="https://github.com/milliorn/React-Material-UI-Dictionary"
+          target="__blank"
         >
           Source Code
         </a>
       </span>
-      <div className='iconContainer'>
+      <div className="iconContainer">
         <a
-          href='https://github.com/milliorn'
-          target='__blank'
-          alt='github'
-          aria-label='github'
+          href="https://github.com/milliorn"
+          target="__blank"
+          alt="github"
+          aria-label="github"
         >
           <FaGithub />
         </a>
         <a
-          href='https://www.linkedin.com/in/scott-milliorn'
-          target='__blank'
-          alt='linkedin'
-          aria-label='linkedin'
+          href="https://www.linkedin.com/in/scott-milliorn"
+          target="__blank"
+          alt="linkedin"
+          aria-label="linkedin"
         >
           <FaLinkedin />
         </a>
         <a
-          href='https://twitter.com/scottmilliorn'
-          target='__blank'
-          alt='twitter'
-          aria-label='twitter'
+          href="https://twitter.com/scottmilliorn"
+          target="__blank"
+          alt="twitter"
+          aria-label="twitter"
         >
           <FaTwitter />
         </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -1,48 +1,48 @@
 {
-	"name": "react-lexicon",
-	"version": "0.1.0",
-	"private": true,
-	"proxy": "https://react-material-ui-dictionary.netlify.app",
-	"dependencies": {
-		"@emotion/react": "11.5.0",
-		"@emotion/styled": "11.3.0",
-		"@material-ui/core": "4.12.3",
-		"@testing-library/jest-dom": "5.14.1",
-		"@testing-library/react": "12.1.2",
-		"@testing-library/user-event": "13.5.0",
-		"axios": "0.24.0",
-		"react": "17.0.2",
-		"react-dom": "17.0.2",
-		"react-icons": "4.3.1",
-		"react-scripts": "4.0.3",
-		"web-vitals": "2.1.2"
-	},
-	"scripts": {
-		"start": "react-scripts start && eslint **/*.js",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject"
-	},
-	"eslintConfig": {
-		"extends": [
-			"react-app",
-			"react-app/jest"
-		]
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	},
-	"devDependencies": {
-		"eslint": "7.32.0",
-		"eslint-plugin-react": "7.26.1"
-	}
+  "name": "react-lexicon",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "https://react-material-ui-dictionary.netlify.app",
+  "dependencies": {
+    "@emotion/react": "11.5.0",
+    "@emotion/styled": "11.3.0",
+    "@material-ui/core": "4.12.3",
+    "@testing-library/jest-dom": "5.14.1",
+    "@testing-library/react": "12.1.2",
+    "@testing-library/user-event": "13.5.0",
+    "axios": "0.24.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "4.3.1",
+    "react-scripts": "4.0.3",
+    "web-vitals": "2.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start && eslint **/*.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-plugin-react": "7.26.1"
+  }
 }

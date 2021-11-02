@@ -9,10 +9,10 @@
   "description": "dictionary",
   "icons": [
     {
-      "src":"icon-512x512.png",
-      "sizes":"196x196",
-      "type":"image/png",
-      "purpose":"any maskable"
+      "src": "icon-512x512.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "/icon-192x192.png",
