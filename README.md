@@ -3,6 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/da8d78e9-67c5-4512-8ac6-dcf03ab4e5e4/deploy-status)](https://app.netlify.com/sites/react-material-ui-dictionary/deploys)
 [![Lint Code Base](https://github.com/milliorn/React-Material-UI-Dictionary/actions/workflows/super-linter.yml/badge.svg)](https://github.com/milliorn/React-Material-UI-Dictionary/actions/workflows/super-linter.yml)
 [![CodeQL](https://github.com/milliorn/React-Material-UI-Dictionary/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/milliorn/React-Material-UI-Dictionary/actions/workflows/codeql-analysis.yml)
+[![OSSAR](https://github.com/milliorn/React-Material-UI-Dictionary/actions/workflows/ossar-analysis.yml/badge.svg)](https://github.com/milliorn/React-Material-UI-Dictionary/actions/workflows/ossar-analysis.yml)
 
 ## Resources
 
